@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="main">
+    <div class="shapka"><p>SHAPKA</p>
+        <div>
+            <p>Алентьев Александр Георгиевич</p>
+            <p>Р3232</p>
+            <p id="variant">Вариант: <a class="link" href="https://se.ifmo.ru/ru/courses/web" target="_blank">482</a></p>
+        </div>
+    </div>
+    <div class="image"></div>
+    <div class="inputvalue">
+        <form method="post" action="action.php" name="my" id="mainform">
+        <div class="zagolovok1">
+        <p>INPUTVALUE</p>
+        </div>
+
+        <div class="inputinpvalue">
+    <div class="XXX">
+        <p>X</p>
+        <select class="inputspisok" name="coordinata_X" id="X">
+            <option value="-3" name="coordinata_X">-3</option>
+            <option value="-2" name="coordinata_X">-2</option>
+            <option value="-1" name="coordinata_X">-1</option>
+            <option value="0" name="coordinata_X">0</option>
+            <option value="1" name="coordinata_X">1</option>
+            <option value="2" name="coordinata_X">2</option>
+            <option value="3" name="coordinata_X">3</option>
+            <option value="4" name="coordinata_X">4</option>
+            <option value="5" name="coordinata_X">5</option>
+        </select>
+    </div>
+        <div class="tablevalue">
+            <p>Y</p>
+            <p>Введите число от -2 до 4</p>
+            <input class="inputtable" tabindex="1" name="coordinata_Y" type="text" >
+        </div>
+
+        <div class="tablevalue" >
+            <p>R</p>
+            <input class="inputradio" id="myradio_1" type="radio" name="coordinata_R" value="1"> 1
+            <input class="inputradio" id="myradio_2" type="radio" name="coordinata_R" value="1.5"> 1.5
+            <input class="inputradio" id="myradio_3" type="radio" name="coordinata_R" value="2"> 2
+            <input class="inputradio" id="myradio_4" type="radio" name="coordinata_R" value="2.5"> 2.5
+            <input class="inputradio" id="myradio_5" type="radio" name="coordinata_R" value="3"> 3
+        </div>
+            <div class="buttonsent"><button id="submint" type="submit">Отправить</button></div>
+            <div class="buttonresent"><button id="resent" type="reset">Сбросить</button></div>
+        </div>
+        </form>
+    </div>
+    <div class="outputvalue">
+        <div class="zagolovok2">
+        <p>OUTPUTVALUE</p>
+    </div>
+        <div class="info">INFORMATION
+            <p id="infoinfo"></p>
+        </div>
+        <div class="table">
+        <table class="table1table">
+            <tr>
+              <th>X</th>
+                <th>Y</th>
+                <th>R</th>
+                <th>currentttime</th>
+                <th>scripttime</th>
+                <th>Result</th>
+            </tr>
+        </table>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
